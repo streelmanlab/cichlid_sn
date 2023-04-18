@@ -11,7 +11,7 @@ data <- readRDS("data.rds")
 cluster_num <- length(unique(combined@meta.data$seuratclusters15))
 
 #define the genes used to calculate a gene score (the number of genes in the list expressed in each nucleus or cell)
-genes <- c("gene_name_1", "gene_name_2", "gene_name_3", [...], "gene_name_n")
+genes <- as.vector("gene_name_1", "gene_name_2", "gene_name_3", [...], "gene_name_n")
 
 # define n as number of unique genes used to create gene score
 n <- length(genes)
